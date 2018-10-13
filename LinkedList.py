@@ -31,8 +31,7 @@ class linkedList_Class():
 
     def sort(self):
         dataToTestAgainst = self.first
-        elementPositionFromTop = 0
-
+       
         while dataToTestAgainst:
             if dataToTestAgainst == self.first:
                 nodeBefore = None
@@ -70,38 +69,3 @@ class linkedList_Class():
                 nodeBefore = dataToTestAgainst
                 dataToTestAgainst = dataToTestAgainst.next
 
-                """
-                placeholderAfter = minData.next
-                placeholderMin = minData
-                placeholderDataAfterElementToBeRemovedDownInList = placeholderBefore.next
-
-                placeholderBefore.next = minData
-                minData.next = placeholderDataAfterElementToBeRemovedDownInList
-                placeholderBeforeMin = placeholderBefore
-                placeholderBeforeMin.next.next = placeholderAfter
-                """
-
-            """
-            nodeBefore = dataToTestAgainst
-            dataToTestAgainst = dataToTestAgainst.next
-            """
-            """
-            tempWork = temp
-            tempWorkCopy = None
-            while (tempWork):
-                tempWork = tempWork.next
-                if None == tempWork:
-                    break
-                if tempWork.data < minValue:
-                    minValue = tempWork.data
-                    tempWorkCopy = tempWork
-
-            if None != tempWorkCopy:
-                tempWorkCopyBackup = tempWorkCopy.next
-                tempWorkCopy.next = temp.next
-                temp.next = tempWorkCopyBackup.next
-                if temp == self.first:
-                    self.first = tempWorkCopy
-
-            temp = temp.next
-            """
